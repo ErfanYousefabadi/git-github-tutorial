@@ -1,0 +1,141 @@
+ git config --global user.name "ErfanYousefabadi"
+ git config --global user.email "erfan.yoosefabadi@gmail.com"
+ git clone git@github.com:ErfanYousefabadi/git-github-tutorial.git
+ cd git-github-tutorial
+ l
+ touch about-me.txt
+ ls
+ git status
+ vim about-me.txt
+ git status
+ git add .
+ git commit -m "Add personal introduction in about-me.txt"
+ ls
+ git log
+ git log --online
+ git log --oneline
+ git log --online
+ git log
+ git log --oneline
+ git log --all --graph
+ vim secrets.txt
+ touch test.log
+ git status'
+ git status
+ vim .gitignore
+ git status
+ git add .gitignore
+ git commit -m "Add .gitignore to exclude secrets and logs"
+ git status
+ git log --all --graph
+ git branch feature/add-skills
+ git checkout feature/add-skills
+ ls
+ vim skills.txt
+ git add skills.txt
+ git add .
+ git status
+ git commit -m "Add skills list"
+ git log --all --graph
+ git checkout main
+ l
+ vim about-me.txt
+ git stash
+ git status
+ git checkout feature/add-skills
+ git checkout main
+ git stash list
+ git stash pop
+ git add .
+ git commit -m "Add goals to about-me.txt"
+ vim mistake.txt
+ git add .
+ git commit -m "Add mistake file"
+ git revert HEAD
+ git log
+ l
+ git log --oneline
+ git switch 495d591
+ git checkout 495d591
+ l
+ ls
+ git switch -
+ git log --oneline
+ git checkout 0efaac1
+ l
+ git switch -
+ vim test-reset.txt
+ git add .
+ git commit -m "Add test reset file"
+ git log --all --graph
+ git reset --soft head~1
+ git reset --soft HEAD~1
+ git status
+ git add password.txt
+ git rm --cached test-reset.txt
+ ls
+ rm test
+ rm test-reset.txt
+ ls
+ vim password.txt
+ git add .
+ git commit -m "Add password file"
+ git rm --cached password.txt
+ ls
+ git status
+ git add ls
+ vim .gitignore
+ ls
+ git add .
+ git status
+ git commit -m "Remove password.txt from tracking and add to\ngitignore"
+ ls
+ git checkout main
+ git push -u origin main
+ git checkout feature/add-skills
+ git status
+ ls
+ rm password.txt
+ ls
+ git push -u origin feature/add-skills
+ git log --all --graph
+ git fetch origin
+ ls
+ l
+ git checkout main
+ ls
+ l
+ git fetch origin
+ git log origin/main
+ git pull origin main
+ ls
+ l
+ git pull origin main
+ git log --graph --all
+ l
+ git checkout list
+ git branch
+ git checkout feature/add-skills
+ git pull origin feature/add-skills
+ git pull
+ git pull origin
+ git checkout main
+ git pull origin
+ ls
+ git pull origin feature/add-skills
+ vim about-me.txt
+ git diff
+ git add .
+ git commit -m "Update about-me with additional information"
+ git log --oneline
+ git diff 66adc98 0b9fa69
+ history | tail -n 400 > learning-summary.md
+ ls
+ vim learning-summary.md
+ mv learning-summary.md commands-history.txt
+ ls
+ vim learning-summary.md
+ ls
+ git status
+ less commands-history.txt
+ ls
